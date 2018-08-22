@@ -85,7 +85,7 @@ public class SalesExecutor {
 				pProduct.setPrice(pProduct.getPrice() - message.getAdjustment());
 				break;
 			case MULTIPLY:
-				pProduct.setPrice(pProduct.getPrice() - message.getAdjustment());
+				pProduct.setPrice(pProduct.getPrice() * message.getAdjustment());
 				break;
 			default:
 				throw new RuntimeException("Operation not supported") ;
